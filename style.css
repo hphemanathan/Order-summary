@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html { 
     background: url(images/pattern-background-desktop.svg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -30,6 +32,23 @@ transition: 0.3s;
 
 }
 
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.listen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    padding: 1cm
+}
 .footer {
     grid-area: footer;
     display: flex;
