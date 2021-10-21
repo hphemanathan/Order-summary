@@ -48,7 +48,23 @@ transition: 0.3s;
     text-align: center;
     color: grey;
     padding: 1cm
+    
 }
+
+.plan {
+    display: flex;
+  align-items: center;
+  text-align: center;
+  background: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.music {
+    margin: 100px;
+}
+
 .footer {
     grid-area: footer;
     display: flex;
