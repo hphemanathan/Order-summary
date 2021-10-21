@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 html { 
     background: url(images/pattern-background-desktop.svg) no-repeat center center fixed; 
     -webkit-background-size: cover;
@@ -28,6 +30,39 @@ background-color: white;
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
 
+}
+
+.order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:30px;
+    font-weight: bold;
+    padding-top: 5%;
+}
+
+.listen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: grey;
+    padding: 1cm
+    
+}
+
+.plan {
+    display: flex;
+  align-items: center;
+  text-align: center;
+  background: lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 25px;
+}
+
+.music {
+    margin: 100px;
 }
 
 .footer {
