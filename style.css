@@ -24,6 +24,8 @@ body {
 
 }
 
+
+
 .container{
 grid-area: card;
 background-color: white;    
@@ -32,37 +34,80 @@ transition: 0.3s;
 
 }
 
+.pad-wrap {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+}
+
 .order {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size:30px;
+    font-size:3vw;
     font-weight: bold;
     padding-top: 5%;
 }
+
+@media screen and (max-width: 601px) {
+    .order {
+      font-size: 10vw;
+    }
+  }
 
 .listen {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: grey;
+    color: rgb(177, 177, 177);
     padding: 1cm
     
 }
 
-.plan {
-    display: flex;
-  align-items: center;
-  text-align: center;
-  background: lightgray;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 25px;
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'icon-wrap plan change ';
+   background-color: rgb(207, 207, 207);
+   padding-top: 1rem;
+   padding-bottom: 1rem;
 }
 
-.music {
-    margin: 100px;
+.icon-wrap {
+  grid-area: icon-wrap;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   
+}
+
+.plan {
+    grid-area: plan;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.change {
+    grid-area: change;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buffer{
+    padding-top: 1rem;
+}
+.payment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    color: white;
+   
+
 }
 
 .footer {
