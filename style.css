@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 html { 
     background: url(images/pattern-background-desktop.svg) no-repeat center center fixed; 
@@ -15,6 +15,7 @@ html, body {
 
 body {
     display: grid;
+    font-family: 'Roboto';
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "header header header"
@@ -31,12 +32,19 @@ grid-area: card;
 background-color: white;    
 box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 transition: 0.3s;
+border-radius: 25px 25px;
+
 
 }
 
+.img {
+    border-radius: 25px 25px 0 0;
+}
+
 .pad-wrap {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+   margin-inline: auto;
+   width: min(80%, 35rem);
+    
 }
 
 .order {
@@ -48,11 +56,11 @@ transition: 0.3s;
     padding-top: 5%;
 }
 
-@media screen and (max-width: 601px) {
+/* @media screen and (max-width: 601px) {
     .order {
       font-size: 10vw;
     }
-  }
+  } */
 
 .listen {
     display: flex;
@@ -68,9 +76,10 @@ transition: 0.3s;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 'icon-wrap plan change ';
-   background-color: rgb(207, 207, 207);
-   padding-top: 1rem;
-   padding-bottom: 1rem;
+    background-color: rgb(207, 207, 207);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .icon-wrap {
@@ -103,11 +112,20 @@ transition: 0.3s;
     justify-content: center;
     align-items: center;
     background-color: blue;
+    box-shadow: 0 4px 8px 0 rgb(98, 98, 194);
     padding-top: 1rem ;
     padding-bottom: 1rem;
     color: white;
+    border-radius: 10px 10px 10px 10px;
+
    
 
+}
+
+.cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer {
@@ -115,4 +133,5 @@ transition: 0.3s;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    max-width: 50rem;
 }
