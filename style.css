@@ -1,10 +1,10 @@
-/* html { 
-    background: url(images/pattern-background-desktop.svg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    font-family: 'Red Hat Display',
+
+}
 
 html {
     height: 100%;
@@ -29,7 +29,7 @@ body {
     margin-top: 6rem;
     margin-inline: auto;
     margin-bottom: 6rem;
-    width: min(90%, 600px);
+    width: min(90%, 500px);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     border-radius: 15px;
   
@@ -51,7 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1.5rem, 7vw, 3rem);
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
     font-weight: 500;
     
 }
@@ -64,7 +64,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: clamp(0.7rem, 4vw, 1.3rem ) ;
+    font-size: clamp(0.7rem, 4vw, 1rem ) ;
     line-height: 1.7rem;
     font-weight: 400;
     color: rgb(175, 175, 175);
@@ -74,6 +74,7 @@ body {
 .plan-button {
     
     display: flex;
+    align-items: center;
     margin-top: 1.5rem;
     margin-inline: min(10%, 3rem);
     background-color: rgb(223, 223, 223);
@@ -105,7 +106,7 @@ body {
     justify-content: left;
     
     padding-left: 1rem;
-    font-size: clamp(0.7rem, 4vw, 1.3rem ) ;
+    font-size: clamp(0.7rem, 4vw, 1rem ) ;
 }
 
 .plan-strong{
@@ -125,7 +126,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(0.7rem, 4vw, 1.3rem ) ;
+    font-size: clamp(0.7rem, 4vw, 1rem ) ;
     color: blue;
     text-decoration: underline;
 }
@@ -134,14 +135,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: hsl(245, 75%, 52%);
     margin-top: 1.5rem;
     margin-inline: min(10%, 3rem);
-    font-size: clamp(0.7rem, 4vw, 1.3rem ) ;
+    font-size: clamp(0.7rem, 4vw, 1rem ) ;
     color: white;
     border-radius: 15px;
     padding-block: min(5%, 1rem);
-    box-shadow: 0 8px 16px 0 rgb(92, 92, 255);
+    box-shadow: 0 8px 16px 0 hsl(229, 100%, 89%);
     
 }
 
@@ -151,8 +152,8 @@ body {
     align-items: center;
     margin-block: 1.5rem;
     margin-inline: min(10%, 3rem);
-    color: rgb(156, 156, 156);
-    font-size: clamp(0.7rem, 4vw, 1.3rem ) ;
+    color: rgb(175, 175, 175);
+    font-size: clamp(0.7rem, 4vw, 1rem )
 }
 
 footer {
